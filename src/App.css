@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.App{
+  text-align:center;
+}
+.App-header {
+  color: green; /* Use 'color' instead of 'font-color' for text color */
+  background-color: #f0f4f8; /* Soft background color to contrast with green */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+  border-bottom: 3px solid green; /* Optional: underline effect */
+}
+
+.table-header{
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+table{
+  /* display:flex; */
+  justify-content:center;
+  border: 1px solid gray;
+  margin: 5vh;
+}
+td{
+  border:1px solid gray;
+  width: 30em;
+}
+
+.Artist-Overview{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Table-Header{
+  background-color: #96bb7c;
+}
+

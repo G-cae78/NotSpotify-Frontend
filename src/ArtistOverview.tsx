@@ -5,6 +5,7 @@ import {ArtistJSON, AlbumJSON}from './types';
 
 const fetchArtists = async (): Promise<ArtistJSON[]> => {
   const response = await axios.get("http://localhost:8080/api/artists");
+  console.log(response.data._embedded.artists)
   return response.data._embedded.artists;
 };
 
@@ -33,7 +34,7 @@ export const ArtistOverview: React.FC = () => {
               <td>{artist.realName}</td>
               <td>{artist.genre}</td>
               <td>{artist.monthlyListeners}</td>
-              <td>{artist.yearJoined}</td>
+              <td>{artist.year}</td>
             </tr>
           ))}
         </tbody>

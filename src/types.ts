@@ -3,7 +3,8 @@ export type ArtistJSON={
     realName: string;
     monthlyListeners: number;
     genre: string;
-    yearJoined: number;
+    id: number;
+    year: number;
     _links: {
         self: {
             href:string;
@@ -87,7 +88,6 @@ export type SongJSON={
 export type UserPlaylistJSON={
     playlistName:string;
     playlistLength:number;
-    song: SongJSON;
     _links: {
         self:{
             href:string;

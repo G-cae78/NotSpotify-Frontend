@@ -42,37 +42,47 @@
 }
 .App{
   text-align:center;
+  background-color: black;
+
 }
+body, html {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 .App-header {
   color: green; /* Use 'color' instead of 'font-color' for text color */
-  background-color: #f0f4f8; /* Soft background color to contrast with green */
+  background-color: black; /* Soft background color to contrast with green */
   padding: 20px;
   text-align: center;
   font-family: 'Arial', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+  box-shadow: 4px 8px green; /* Adds a soft shadow for depth */
   border-bottom: 3px solid green; /* Optional: underline effect */
 }
 
 .table-header{
-  background-color: #282c34;
+  background-color: black;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: green;
 }
 table{
   /* display:flex; */
   justify-content:center;
-  border: 1px solid gray;
+  border: 1px solid green;
   margin: 5vh;
 }
 td{
-  border:1px solid gray;
+  border:1px solid green;
   width: 30em;
 }
 

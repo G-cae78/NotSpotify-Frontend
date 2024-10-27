@@ -3,7 +3,8 @@ export interface Artist{
     realName: string,
     monthlyListeners: number,
     genre: string,
-    yearJoined: number,
+    id: number,
+    year: number,
 }
 
 export interface Album{

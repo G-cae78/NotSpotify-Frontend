@@ -20,7 +20,7 @@ export const UserPlaylistOverview: React.FC= () =>{
                 <tr className="Table-Header">
                     <th>Playlist Name</th>
                     <th>Playlist Length</th>
-                    <th>Songs</th>
+                    {/* <th>Songs</th> */}
                 </tr>
                 </thead>
                 <tbody>

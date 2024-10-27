@@ -17,27 +17,27 @@ function App() {
     <QueryClientProvider client={queryClient}>
      
       <div className='App'>
-      <header className='App-Header'>
+      <header className='App-header'>
         <h1>NotSpotify</h1>
       </header>
-        <header className='table-Header'>
-          Users Table
+        <header className='table-header'>
+          Users 
         </header>
         <AppUserOverview/>
         <header className='table-header'>
-          Artist Table
+          Artists
         </header>
         <ArtistOverview/>
-        <header className='table-Header'>
-          Album Table
+        <header className='table-header'>
+          Album 
         </header>
         <AlbumOverview/>
-        <header className='table-Header'>
-          Song Table
+        <header className='table-header'>
+          Song
         </header>
         <SongOverview/>
-        <header className='table-Header'>
-          Playlist Table
+        <header className='table-header'>
+          Playlist 
         </header>
         <UserPlaylistOverview/>
         </div>

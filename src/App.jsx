@@ -9,40 +9,56 @@ import { AppUserOverview } from './AppUserOverview'
 import { SongOverview } from './SongOverview'
 import { UserPlaylistOverview } from './UserPlaylistOverview'
 
-const queryClient= new QueryClient();
+// Creating a new instance of QueryClient to manage server state using react-query
+const queryClient = new QueryClient();
+
 function App() {
-  const [count, setCount] = useState(0)
+  // State for managing a count variable (currently unused in the UI)
+  const [count, setCount] = useState(0);
 
   return (
+    // Wrapping the application in a QueryClientProvider to enable server state handling across components
     <QueryClientProvider client={queryClient}>
-     
       <div className='App'>
-      <header className='App-header'>
-        <h1>NotSpotify</h1>
-      </header>
+        {/* App header with the main application title */}
+        <header className='App-header'>
+          <h1>NotSpotify</h1>
+        </header>
+        
+        {/* Table headers and component sections for each entity in the app */}
+        
+        {/* Users Table */}
         <header className='table-header'>
           Users 
         </header>
-        <AppUserOverview/>
+        <AppUserOverview />    {/* Component displaying users in the application */}
+
+        {/* Artists Table */}
         <header className='table-header'>
           Artists
         </header>
-        <ArtistOverview/>
+        <ArtistOverview />     {/* Component displaying artists */}
+
+        {/* Albums Table */}
         <header className='table-header'>
-          Album 
+          Albums 
         </header>
-        <AlbumOverview/>
+        <AlbumOverview />      {/* Component displaying albums */}
+        
+        {/* Songs Table */}
         <header className='table-header'>
-          Song
+          Songs
         </header>
-        <SongOverview/>
+        <SongOverview />       {/* Component displaying songs */}
+        
+        {/* Playlists Table */}
         <header className='table-header'>
-          Playlist 
+          Playlists
         </header>
-        <UserPlaylistOverview/>
-        </div>
+        <UserPlaylistOverview /> {/* Component displaying user playlists */}
+      </div>
     </QueryClientProvider>
   );
 }
 
-export default App
+export default App;

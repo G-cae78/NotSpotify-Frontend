@@ -54,9 +54,8 @@ body, html {
 }
 
 .App-header {
-  color: green; /* Use 'color' instead of 'font-color' for text color */
-  background-color: black; /* Soft background color to contrast with green */
-  padding: 20px;
+  color: green; 
+  background-color: black; 
   text-align: center;
   font-family: 'Arial', sans-serif;
   font-size: 1.5em;
